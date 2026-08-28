@@ -16,6 +16,7 @@
             padding: 40px 20px;
             font-family: Arial, sans-serif;
             background: #ffffff;
+            color: #333333;
         }
 
         h1 {
@@ -29,10 +30,15 @@
 
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            gap: 35px 20px;
+            align-items: start;
         }
 
         .award {
+            width: 100%;
+        }
+
+        .award-image {
             width: 100%;
             height: 300px;
 
@@ -44,11 +50,33 @@
             overflow: hidden;
         }
 
-        .award img {
+        .award-image img {
             width: 100%;
             height: 100%;
             object-fit: contain;
             display: block;
+        }
+
+        .award-info {
+            padding-top: 15px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .award-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .award-contest {
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .award-date {
+            font-size: 13px;
+            color: #888888;
         }
 
         /* 태블릿 */
@@ -57,7 +85,7 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .award {
+            .award-image {
                 height: 300px;
             }
         }
@@ -65,27 +93,31 @@
         /* 휴대폰 */
         @media (max-width: 600px) {
             body {
-                padding: 20px 12px;
+                padding: 25px 12px;
             }
 
             h1 {
-                margin-bottom: 25px;
+                margin-bottom: 30px;
             }
 
             .awards {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 35px;
             }
 
-            .award {
+            .award-image {
                 height: auto;
                 min-height: 300px;
             }
 
-            .award img {
+            .award-image img {
                 width: 100%;
                 height: auto;
                 max-height: 500px;
+            }
+
+            .award-info {
+                padding-top: 12px;
             }
         }
     </style>
@@ -97,24 +129,73 @@
 
     <div class="awards">
 
+        <!-- 작품 1 -->
         <div class="award">
-            <img src="awards/award01.jpg" alt="수상작 1">
+            <div class="award-image">
+                <img src="awards/award01.jpg" alt="수상작 1">
+            </div>
+
+            <div class="award-info">
+                <div class="award-title">[유치부-6세] 대상</div>
+                <div class="award-contest">대한민국 국제 어린이 미술대회</div>
+                <div class="award-date">2026-05-13</div>
+            </div>
         </div>
 
+
+        <!-- 작품 2 -->
         <div class="award">
-            <img src="awards/award02.jpg" alt="수상작 2">
+            <div class="award-image">
+                <img src="awards/award02.jpg" alt="수상작 2">
+            </div>
+
+            <div class="award-info">
+                <div class="award-title">[유치부-7세] 최우수상</div>
+                <div class="award-contest">세계 어린이 미술&amp;디자인 대회</div>
+                <div class="award-date">2026-03-25</div>
+            </div>
         </div>
 
+
+        <!-- 작품 3 -->
         <div class="award">
-            <img src="awards/award03.jpg" alt="수상작 3">
+            <div class="award-image">
+                <img src="awards/award03.jpg" alt="수상작 3">
+            </div>
+
+            <div class="award-info">
+                <div class="award-title">[초등부-9세] 대상</div>
+                <div class="award-contest">국제 어린이 및 청소년 미술공모전</div>
+                <div class="award-date">2026-06-10</div>
+            </div>
         </div>
 
+
+        <!-- 작품 4 -->
         <div class="award">
-            <img src="awards/award04.jpg" alt="수상작 4">
+            <div class="award-image">
+                <img src="awards/award04.jpg" alt="수상작 4">
+            </div>
+
+            <div class="award-info">
+                <div class="award-title">[초등부-11세] 우수상</div>
+                <div class="award-contest">대한민국 국제 어린이 미술대회</div>
+                <div class="award-date">2026-06-18</div>
+            </div>
         </div>
 
+
+        <!-- 작품 5 -->
         <div class="award">
-            <img src="awards/award05.jpg" alt="수상작 5">
+            <div class="award-image">
+                <img src="awards/award05.jpg" alt="수상작 5">
+            </div>
+
+            <div class="award-info">
+                <div class="award-title">[초등부-12세] 대상</div>
+                <div class="award-contest">세계 어린이 미술&amp;디자인 대회</div>
+                <div class="award-date">2026-03-30</div>
+            </div>
         </div>
 
     </div>
