@@ -55,6 +55,11 @@
             height: 100%;
             object-fit: contain;
             display: block;
+
+            /* 이미지 드래그 방지 */
+            user-select: none;
+            -webkit-user-drag: none;
+            pointer-events: none;
         }
 
         .award-info {
@@ -123,7 +128,7 @@
     </style>
 </head>
 
-<body>
+<body oncontextmenu="return false">
 
     <h1>수상작</h1>
 
@@ -151,7 +156,7 @@
 
             <div class="award-info">
                 <div class="award-title">[유치부-7세] 최우수상</div>
-                <div class="award-contest">세계 어린이 미술&디자인 대회</div>
+                <div class="award-contest">세계 어린이 미술&amp;디자인 대회</div>
                 <div class="award-date">2026-03-25</div>
             </div>
         </div>
@@ -193,7 +198,7 @@
 
             <div class="award-info">
                 <div class="award-title">[초등부-12세] 대상</div>
-                <div class="award-contest">세계 어린이 미술&디자인 대회</div>
+                <div class="award-contest">세계 어린이 미술&amp;디자인 대회</div>
                 <div class="award-date">2026-03-30</div>
             </div>
         </div>
