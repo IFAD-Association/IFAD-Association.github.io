@@ -20,28 +20,45 @@
 
         h1 {
             text-align: center;
-            margin-bottom: 40px;
+            margin: 0 0 40px;
         }
 
         .awards {
             max-width: 1400px;
             margin: 0 auto;
+
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
-            align-items: start;
+        }
+
+        .award {
+            width: 100%;
+            height: 300px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #f5f5f5;
+            overflow: hidden;
         }
 
         .award img {
-            display: block;
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: contain;
+            display: block;
         }
 
         /* 태블릿 */
         @media (max-width: 900px) {
             .awards {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .award {
+                height: 300px;
             }
         }
 
@@ -58,6 +75,17 @@
             .awards {
                 grid-template-columns: 1fr;
                 gap: 20px;
+            }
+
+            .award {
+                height: auto;
+                min-height: 300px;
+            }
+
+            .award img {
+                width: 100%;
+                height: auto;
+                max-height: 500px;
             }
         }
     </style>
