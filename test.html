@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>수상작 테스트</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .awards {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            align-items: start;
+        }
+
+        .award img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        /* 태블릿 */
+        @media (max-width: 900px) {
+            .awards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* 휴대폰 */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 12px;
+            }
+
+            h1 {
+                margin-bottom: 25px;
+            }
+
+            .awards {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>수상작</h1>
+
+    <div class="awards">
+
+        <div class="award">
+            <img src="awards/award01.jpg" alt="수상작 1">
+        </div>
+
+        <div class="award">
+            <img src="awards/award02.jpg" alt="수상작 2">
+        </div>
+
+        <div class="award">
+            <img src="awards/award03.jpg" alt="수상작 3">
+        </div>
+
+        <div class="award">
+            <img src="awards/award04.jpg" alt="수상작 4">
+        </div>
+
+        <div class="award">
+            <img src="awards/award05.jpg" alt="수상작 5">
+        </div>
+
+    </div>
+
+</body>
+</html>
