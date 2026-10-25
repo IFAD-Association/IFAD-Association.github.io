@@ -2271,3 +2271,42 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+/* Participating Countries */
+.countries-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+}
+
+.countries-list li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 1.2rem;
+}
+
+.countries-list li img {
+    display: block;
+    width: 54px;
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.countries-list .country-name {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    line-height: 1.4;
+}
+
+.countries-list .country-name strong {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.countries-list .country-name span {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
