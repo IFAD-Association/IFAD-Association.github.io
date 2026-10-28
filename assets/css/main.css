@@ -2310,3 +2310,10 @@ button,
     font-size: 0.8rem;
     opacity: 0.7;
 }
+
+/* 왼쪽 메인 메뉴 글씨 크기 및 굵기 */
+#sidebar #menu > ul > li > a,
+#sidebar #menu > ul > li > span.opener {
+    font-size: 1.1em;
+    font-weight: 700;
+}
